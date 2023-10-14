@@ -1,0 +1,6 @@
+flask
+flask_login
+flask_sqlalchemy
+jinja2
+matplotlib.pyplot
+sqlalchemy

@@ -1,0 +1,20 @@
+##cd to project
+cd /mnt/e/c++_programs/vue/kanban/backend/  
+
+## start redis server on windows
+sudo service redis-server start                                       1
+
+## start mailhog server
+~/go/bin/MailHog                                                        2    
+
+## start beat in windows
+celery -A main.celery beat --max-interval 1 -l info                    3
+
+## start worker in ubuntu
+celery -A main.celery worker -l info                                   4
+
+## mailhog server
+ip = ip addr              // to get ip of wsl  
+ip:8025
+
+  
